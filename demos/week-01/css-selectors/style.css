@@ -1,0 +1,27 @@
+header {
+  background-color: pink;
+}
+
+p {
+  color: tomato;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.title {
+  font-family: monospace;
+}
+
+.special {
+  font-style: italic;
+}
+
+.header-nav a {
+  color: white;
+}
+
+#topofpage {
+  color: orange;
+}
