@@ -1,0 +1,10 @@
+.cookie-notice {
+  background-color: #191919;
+  color: #fff;
+  padding: 16px;
+  width: 400px;
+
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
