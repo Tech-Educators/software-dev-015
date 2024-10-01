@@ -19,7 +19,9 @@ p {
 }
 
 .header-nav a {
-  color: white;
+  color: #79b1b2;
+  text-decoration: none;
+  font-family: cursive;
 }
 
 #topofpage {
