@@ -1,0 +1,37 @@
+.flex-container {
+  background-color: #3f0f46;
+  width: 80%;
+  border-radius: 10px;
+  min-height: 100px;
+  padding: 10px;
+
+  height: 500px;
+  display: flex;
+  flex-direction: row; /* this determine the main axis */
+  justify-content: space-between; /* this moves flex-items along the main axis */
+  align-items: center; /* this moves flex-items on the cross axis */
+
+  flex-wrap: wrap; /* if you run out of room, you can break to the next line */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  background-color: #ff5292;
+}
+
+.two {
+  background-color: #ffc540;
+}
+
+.three {
+  background-color: #37bcff;
+}
