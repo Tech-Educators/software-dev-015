@@ -1,0 +1,13 @@
+body {
+  font-family: monospace;
+}
+
+.dark {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #fff;
+  color: #3e3e3e;
+}
