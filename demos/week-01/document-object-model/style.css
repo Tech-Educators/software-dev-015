@@ -1,0 +1,9 @@
+body {
+  font-family: monospace;
+}
+
+.fancy {
+  font-family: cursive;
+  color: fuchsia;
+  font-style: italic;
+}
