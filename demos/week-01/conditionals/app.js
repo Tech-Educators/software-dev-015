@@ -46,6 +46,9 @@ Comparison Operators
 <=  is equal to or less than
 >=  is equal to or greater than
 
+=== strictly equal to
+!== stringly NOT equal to
+
 */
 
 // ELSE
