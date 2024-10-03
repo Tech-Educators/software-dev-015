@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.otter {
+  background-image: url(./otter.jpg);
+}
+
+.raccoon {
+  background-image: url(./raccoon.jpg);
+}
+
+p {
+  position: absolute;
+  left: 100px;
+  bottom: 300px;
+}
