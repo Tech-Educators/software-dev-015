@@ -1,0 +1,15 @@
+button {
+  background: black;
+  color: white;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+:focus {
+  outline: 2px solid red;
+}
