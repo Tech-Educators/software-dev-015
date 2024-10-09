@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images, Videos, Audios Galore!</title>
+  </head>
+  <body>
+    <h1>Check out my sweet, sweet media!</h1>
+
+    <h2>Images</h2>
+    <p>
+      We can directly link to images which are already hosted on the internet:
+    </p>
+    <!-- https://c02.purpledshub.com/uploads/sites/62/2024/07/kangaroo-facts.jpg?w=1200 -->
+    <img src="" alt="a nice picture of a kangaroo" width="250px" />
+
+    <p>We can also use the img tag to display gifs</p>
+    <img
+      src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXA4dDVwM24yd2hweG9tN3N0c3B5aGwyczNidTgxeWt1YjRreTMxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7qE29stIOthjc2cw/giphy.gif"
+      alt="a surprised kangaroo spots the camera"
+    />
+
+    <p>We should probably use our own images so that we have more control!</p>
+    <img
+      src="./assets/mySweetKangaroo.jpg"
+      alt="this kangaroo image is not only brilliant, but is from my assets folder"
+      width="250px"
+    />
+    <img
+      src="./myOtherSweetKangaroo.jpg"
+      alt="another kangaroo, they're taking over!"
+      width="250px"
+    />
+
+    <h2>Videos</h2>
+    <p>I can use videos links hosted online within a video tag:</p>
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      controls
+      width="500px"
+      poster="./assets/bbb.png"
+      autoplay
+      muted
+    ></video>
+
+    <video src="./assets/cosy-fireplace.mp4" controls width="500px"></video>
+
+    <h2>Audio</h2>
+    <audio src="./assets/relaxing-guitar-loop-v5.mp3" controls></audio>
+  </body>
+</html>
