@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <form>
+      <label for="un-input">Username</label>
+      <input name="username" placeholder="Username" id="un-input" />
+
+      <label for="pw-input">Password</label>
+      <input
+        name="password"
+        placeholder="Password"
+        id="pw-input"
+        type="password"
+      />
+      <button id="show-hide">Show/Hide</button>
+
+      <button>Log in</button>
+    </form>
+
+    <p>
+      We gave our input a palceholder so the user can see what it is for (before
+      they type in it)
+    </p>
+    <p>
+      We gave our input an id and our label a matching for attribute, which
+      means they are "related"
+    </p>
+
+    <p>
+      The default behaviour of our form is to put the information we typed into
+      the url (as a query string) and refresh the page
+    </p>
+
+    <p>
+      We are going to PREVENT the DEFAULT behaviour of the form using an event
+      listener
+    </p>
+  </body>
+</html>
