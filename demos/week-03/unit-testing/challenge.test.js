@@ -4,7 +4,7 @@ function palindrome(word) {
   return true; // or false
 }
 
-describe("Words that are palenromic", function () {
+describe("Words that are palindromic", function () {
   test("madam", function () {
     const result = palindrome("madam");
     expect(result).toBe(true);
@@ -16,7 +16,7 @@ describe("Words that are palenromic", function () {
   });
 });
 
-describe("Words that are NOT palendromic", function () {
+describe("Words that are NOT palindromic", function () {
   test("Tim is great", function () {
     const result = palindrome("Tim is great");
     expect(result).toBe(false);
