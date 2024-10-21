@@ -42,9 +42,10 @@ The project structure will be as follows:
    cd client
    ```
 
-2. Initialize a Vite project:
+2. Initialize a Vite project and install vite:
 
    ```bash
+   npm init -y
    npm i vite
    ```
 
