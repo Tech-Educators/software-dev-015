@@ -13,6 +13,7 @@ const data = [
 ];
 
 // create endpoints/routes
+// GET
 // http://localhost:8080
 app.get("/", function (request, response) {
   response.json("You are looking at my root route. How roude.");
@@ -21,6 +22,11 @@ app.get("/", function (request, response) {
 // http://localhost:8080/starwars
 app.get("/starwars", function (request, response) {
   response.json(data);
+});
+
+// POST
+app.post("/starwars", function (request, response) {
+  response.json("This is a POST endpoint.");
 });
 
 // start our server
