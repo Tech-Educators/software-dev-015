@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/pokemons", (req, res)=>{
-    console.log("I am the API route")
+    //console.log("I am the API route")
 
 const allPokemons = [
     {
