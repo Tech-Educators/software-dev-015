@@ -1,0 +1,13 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 300px;
+}
+
+p {
+  font-style: italic;
+}
