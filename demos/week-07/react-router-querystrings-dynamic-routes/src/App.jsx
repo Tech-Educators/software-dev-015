@@ -1,10 +1,11 @@
 import {Route, Routes, Link} from "react-router-dom"
 import AnimalsPage from "./pages/AnimalsPage"
 import IndividaulAnimalPage from "./pages/IndividaulAnimalPage"
+import SortAnimals from "./pages/SortAnimals"
+
 export default function App() {
   return (
     <div>
-
       <h2>Welcome to my website!</h2>
       <Link to={'/'}>home</Link>
       <br />
@@ -14,10 +15,10 @@ export default function App() {
 
       <Routes>
         <Route path={'/animals'} element={<AnimalsPage />} />
+        <Route path={'/sort-animals'} element={<SortAnimals />} />
         {/* dynamic route */}
         {/* The : says to reactrouter that this is a dynamic route and it should 'match' to anything written after /animals/*/}
         <Route path={'/animals/:id'} element={<IndividaulAnimalPage />}>
-
         {/* nested routing */}
         {/* /animals/3/edit */}
         {/* if you want to use nested routes, the parent components needs to include an <Outlet> component, telling the page where to display the nested routes */}
