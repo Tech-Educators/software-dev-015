@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Outlet } from "react-router-dom"
 import { findAnimal } from "../stores/Animals"
 
 export default function IndividaulAnimalPage() {
@@ -12,7 +12,7 @@ export default function IndividaulAnimalPage() {
     return (
         <div>
             <h2>Single animal page!</h2>
-
+            <Outlet />
             <h2>{animalInfo.name}</h2>
             <img src={animalInfo.img} />
             <br />
