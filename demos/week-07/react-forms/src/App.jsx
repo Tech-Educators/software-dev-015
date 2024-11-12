@@ -8,7 +8,8 @@ export default function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("WOOP!");
+    console.log(form);
+    setForm({ setup: "", punchline: "" });
   }
 
   function handleChange(event) {
@@ -26,13 +27,19 @@ export default function App() {
       <h1>Forms in React are fuN!</h1>
       <form onSubmit={handleSubmit}>
         <label>Setup</label>
-        <input name="setup" placeholder="Setup" onChange={handleChange} />
+        <input
+          name="setup"
+          placeholder="Setup"
+          onChange={handleChange}
+          value={form.setup}
+        />
 
         <label>Punchline</label>
         <input
           name="punchline"
           placeholder="Punchline"
           onChange={handleChange}
+          value={form.punchline}
         />
 
         <button>Tell joke</button>
