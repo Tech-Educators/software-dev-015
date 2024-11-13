@@ -4,8 +4,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 
-export default function NavBar() {
-    
+export default function NavBar({count, toggleCount}) {
+    console.log('rerendering')
     // const {theme, toggleTheme} = useTheme()
 
     const {language, toggleLanguage} = useLanguage()
@@ -23,6 +23,10 @@ export default function NavBar() {
                     <button onClick={toggleLanguage}>
                         Switch to {language === 'en' ? 'Spanish' : 'English'}
                     </button>
+                    <button onClick={toggleCount}>
+                       {count}
+                    </button>
+
                 </div>
             </div>
             <p>Current Language: {language}</p>
