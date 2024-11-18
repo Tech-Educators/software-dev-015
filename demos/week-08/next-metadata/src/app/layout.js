@@ -12,12 +12,17 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+// for images, put them in the public folder
+// you don't need to specifc more of the route if its already in the public folder
+// eg image is in public/image.png just write 'image.png'
+// if image is in public/openGraph/image.png' write '/openGraph/image.png'
+
 export const metadata = {
   title: "Sams Mushroom App",
   description: "Learn more about different mushrooms",
   openGraph: {
     title: 'All mushrooms | Sams Mushroom Tracker',
-    image: ['']
+    image: ['image.png']
   }
 };
 
