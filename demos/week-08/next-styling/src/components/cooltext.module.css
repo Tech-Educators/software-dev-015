@@ -1,0 +1,7 @@
+
+/* we have to use classes when working with css modules */
+
+.coolText {
+    color: deeppink;
+    font-size: 2rem;
+}
