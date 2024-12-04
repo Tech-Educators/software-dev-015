@@ -13,7 +13,18 @@ export default function App() {
       mywebsite.com/about-us
       mywebsite.com/home
       */}
-      <SamsRoutes/>
+      {/* <SamsRoutes/> */}
+      <Routes>
+            <Route path='/' element={<p>This is the home route!</p>} />
+            <Route path='/about-us' element={<p>This is the about us page</p>} />
+            <Route path='/books' element={<Books />} />
+
+            {/* used to display not found - matches another other path then the one above. */}
+            <Route path="*" element={<p>404</p>} />
+      </Routes>
+
+
+      <p>This is the footer</p>
 
     </div>
   )
