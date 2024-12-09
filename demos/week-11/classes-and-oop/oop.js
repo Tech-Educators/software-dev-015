@@ -59,3 +59,32 @@ steve.fly()
 steve.sleep()
 
 console.log(steve)
+
+
+
+
+
+
+
+class Car {
+    constructor(color, wheels) {
+        this.colour = color,
+        this.wheels = wheels
+    }
+
+    drive() {
+        console.log(`${this.colour} car drives into the sunset`)
+    }
+}
+
+
+
+const newObject = new Car('red', 4)
+const newObject2 = new Car('green', 4)
+const newObject3 = new Car('orange', 3)
+const newObject4 = new Car('yellow', 6)
+const newObject5 = new Car('purple', 2)
+newObject.drive()
+
+newObject5.drive()
+// {colour: 'red', wheels: 4}

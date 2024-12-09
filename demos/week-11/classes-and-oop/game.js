@@ -1,6 +1,6 @@
 
 function getAttackDamage(max) {
-    return Math.floor(Math.random * max)
+    return Math.floor(Math.random() * max)
 }
 
 class Character {
@@ -14,7 +14,7 @@ class Character {
         const damage = getAttackDamage(this.maxAttackDamage)
         target.health -= damage
         console.log(
-            `${this.name} attacks and deals ${this.damage} damage! ${target.name} now has ${target.health} health`
+            `${this.name} attacks and deals ${damage} damage! ${target.name} now has ${target.health} health`
         )
     }
 
@@ -33,7 +33,7 @@ class Player extends Character {
 
     // the player character always heals a little before they take their turn
     preTurnAction() {
-        this.health = this.healAmount
+        this.health += Math.floor(this.healAmount * Math.random())
         console.log(`${this.name} heals for ${this.healAmount}. Their health is now ${this.health}`)
     }
 }
@@ -62,8 +62,27 @@ function playGame() {
 
     const turns = 5;
 
-    // for loop
+    for (let i = 1; i <= turns; i++) {
+        console.log(`----- Turn ${i} ------ `)
+
+        player.preTurnAction()
+        player.attack(vampire)
+
+        if (vampire.isDead()) {
+            console.log(`The vampire was slain!!! Wooo hoo1!`)
+            break;
+        }
+
+        vampire.attack(player)
+        if (player.isDead()) {
+            console.log(`The player was defeated. Continue??`)
+            break;
+        }
+
+    }
 
     // if either vampire or player has 0 health, end the game.
 
 }
+
+playGame()
